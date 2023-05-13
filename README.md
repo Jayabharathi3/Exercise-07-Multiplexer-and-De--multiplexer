@@ -83,7 +83,7 @@ Program for flipflops  and verify its truth table in quartus using Verilog progr
 Developed by: JAYABHARATHI.S
 RegisterNumber: 212222100013 
 */
-```
+
 MULTIPLEXER
 
 module multi (s0,s1,a0,a1,a2,a3,y);
