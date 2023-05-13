@@ -77,6 +77,7 @@ Give the respective inputs for timing diagram and obtain the results.
 
 
 ### PROGRAM 
+```
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: JAYABHARATHI.S
