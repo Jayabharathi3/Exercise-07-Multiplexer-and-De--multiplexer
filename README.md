@@ -1,8 +1,14 @@
 # Exercise-07-Multiplexer-and-De-multiplexer
-### AIM: To implement 4 X1 multiplexer and 1X4 de multiplexer using verilog and validate its outputs
+
+### AIM: 
+To implement 4 X1 multiplexer and 1X4 de multiplexer using verilog and validate its outputs
+
 ### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
+
 ### SOFTWARE REQUIRED:   Quartus prime
+
 ### THEORY 
+
 
 ## What are Multiplexer and Demultiplexer?
 In-network transmission, both the multiplexer and demultiplexer are combinational circuits. A multiplexer selects an input from several inputs then it is transmitted in the form of a single line. An alternative name of the multiplexer is MUX or data selector. A demultiplexer uses one input signal and generates many. So it is known as Demux or data distributor.
@@ -47,42 +53,106 @@ If the control input changes to AB = 10, then all the gates are restricted excep
  
  
 ### Procedure
-/* write all the steps invloved */
+
+## Step 1
+
+Create a project with required entities.
+
+## Step 2
+
+Create a module along with respective file name for both Multiplexer and De-multiplexer.
+
+## Step 3
+
+Run the module and get the respective RTL outputs.
+
+## Step 4
+
+Create university program(VWF) for getting timing diagram.
+
+## Step 5
+
+Give the respective inputs for timing diagram and obtain the results.
 
 
 
 ### PROGRAM 
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: JAYABHARATHI.S
+RegisterNumber: 212222100013 
 */
+```
+MULTIPLEXER
+
+module multi (s0,s1,a0,a1,a2,a3,y);
+input s0,s1,a0,a1,a2,a3;
+output y;
+wire a,b,c,d,s0bar,s1bar;
+not (s0bar,s0);
+not (s1bar,s1);
+and (a,s0,s1,a3);
+and (b,s0bar,s1,a2);
+and (c,s0,s1bar,a1);
+and (d,s0bar,s1bar,a0);
+or (y,a,b,c,d);
+endmodule
 
 
+DEMULTIPLEXER
 
+module demul(y0,y1,y2,y3,s0,s1,i);
+input s0,s1,i;
+output y0,y1,y2,y3;
+wire sbar,s1bar;
+nor(sbar,s0);
+nor(s1bar,s1);
+and(y0,i,sbar,s1);
+and(y1,i,sbar,s1bar);
+and(y2,i,s0,s1bar);
+and(y3,i,s0,s1);
+endmodule
 
-
+```
 
 ### RTL LOGIC  
 
+## MULTIPLEXER
+
+![RTL MUX](https://github.com/Jayabharathi3/Exercise-07-Multiplexer-and-De--multiplexer/assets/120367796/2a2b0ff6-856d-4f1d-ba1a-a2220fb3ac9b)
 
 
+## DEMULTIPLEXER
 
-
-
+![demux RTL](https://github.com/Jayabharathi3/Exercise-07-Multiplexer-and-De--multiplexer/assets/120367796/f73f40d3-e774-46d7-998f-4e56adc10232)
 
 
 ### TIMING DIGRAMS  
 
 
+## MULTIPLEXER
+
+![mux td](https://github.com/Jayabharathi3/Exercise-07-Multiplexer-and-De--multiplexer/assets/120367796/99b66265-558a-4181-ad09-245adf3b9ff7)
+
+
+## DEMULTIPLEXER
+
+![demux TD](https://github.com/Jayabharathi3/Exercise-07-Multiplexer-and-De--multiplexer/assets/120367796/17983413-bf9f-4e3c-8d4b-40ca68d8e37d)
 
 
 
 ### TRUTH TABLE 
 
+## MULTIPLEXER
+
+![mux tt](https://github.com/Jayabharathi3/Exercise-07-Multiplexer-and-De--multiplexer/assets/120367796/e6a72478-358e-43be-bd01-6bde6aa02ed6)
 
 
+## DEMULTIPLEXER
 
+![demux tt](https://github.com/Jayabharathi3/Exercise-07-Multiplexer-and-De--multiplexer/assets/120367796/c71aa7af-7d81-4259-98db-e78688586e53)
 
 
 ### RESULTS 
+
+Thus the implementation of Multiplexer and Demultiplexer are verified
