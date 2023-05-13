@@ -54,6 +54,7 @@ If the control input changes to AB = 10, then all the gates are restricted excep
  
 ### Procedure
 
+
 ## Step 1
 
 Create a project with required entities.
@@ -73,6 +74,8 @@ Create university program(VWF) for getting timing diagram.
 ## Step 5
 
 Give the respective inputs for timing diagram and obtain the results.
+
+
 
 
 
@@ -116,19 +119,27 @@ endmodule
 
 ```
 
+
+
 ### RTL LOGIC  
 
+
 ## MULTIPLEXER
+
 
 ![RTL MUX](https://github.com/Jayabharathi3/Exercise-07-Multiplexer-and-De--multiplexer/assets/120367796/2a2b0ff6-856d-4f1d-ba1a-a2220fb3ac9b)
 
 
+
 ## DEMULTIPLEXER
+
 
 ![demux RTL](https://github.com/Jayabharathi3/Exercise-07-Multiplexer-and-De--multiplexer/assets/120367796/f73f40d3-e774-46d7-998f-4e56adc10232)
 
 
+
 ### TIMING DIGRAMS  
+
 
 
 ## MULTIPLEXER
@@ -144,6 +155,7 @@ endmodule
 
 ### TRUTH TABLE 
 
+
 ## MULTIPLEXER
 
 ![mux tt](https://github.com/Jayabharathi3/Exercise-07-Multiplexer-and-De--multiplexer/assets/120367796/e6a72478-358e-43be-bd01-6bde6aa02ed6)
@@ -152,6 +164,7 @@ endmodule
 ## DEMULTIPLEXER
 
 ![demux tt](https://github.com/Jayabharathi3/Exercise-07-Multiplexer-and-De--multiplexer/assets/120367796/c71aa7af-7d81-4259-98db-e78688586e53)
+
 
 
 ### RESULTS 
