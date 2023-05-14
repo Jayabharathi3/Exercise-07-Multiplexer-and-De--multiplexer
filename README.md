@@ -77,8 +77,6 @@ Give the respective inputs for timing diagram and obtain the results.
 
 
 
-
-
 ### PROGRAM 
 ```
 /*
@@ -121,8 +119,7 @@ endmodule
 
 
 
-### RTL LOGIC  
-
+### RTL LOGIC 
 
 ## MULTIPLEXER
 
@@ -140,8 +137,6 @@ endmodule
 
 ### TIMING DIGRAMS  
 
-
-
 ## MULTIPLEXER
 
 ![mux td](https://github.com/Jayabharathi3/Exercise-07-Multiplexer-and-De--multiplexer/assets/120367796/99b66265-558a-4181-ad09-245adf3b9ff7)
@@ -154,7 +149,6 @@ endmodule
 
 
 ### TRUTH TABLE 
-
 
 ## MULTIPLEXER
 
