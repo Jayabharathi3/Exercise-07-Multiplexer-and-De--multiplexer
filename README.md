@@ -144,7 +144,8 @@ endmodule
 
 ## DEMULTIPLEXER
 
-![demux TD](https://github.com/Jayabharathi3/Exercise-07-Multiplexer-and-De--multiplexer/assets/120367796/17983413-bf9f-4e3c-8d4b-40ca68d8e37d)
+![de7](https://github.com/Jayabharathi3/Exercise-07-Multiplexer-and-De--multiplexer/assets/120367796/69fb5ba2-adf3-48d5-b8c0-ffff79ddac2f)
+
 
 
 
@@ -152,7 +153,9 @@ endmodule
 
 ## MULTIPLEXER
 
-![mux tt](https://github.com/Jayabharathi3/Exercise-07-Multiplexer-and-De--multiplexer/assets/120367796/e6a72478-358e-43be-bd01-6bde6aa02ed6)
+![de8](https://github.com/Jayabharathi3/Exercise-07-Multiplexer-and-De--multiplexer/assets/120367796/a2b65668-a909-4c37-a94c-a1f9b3b36243)
+
+
 
 
 ## DEMULTIPLEXER
