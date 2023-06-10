@@ -87,8 +87,8 @@ RegisterNumber: 212222100013
 
 MULTIPLEXER
 
-module multi (s0,s1,a0,a1,a2,a3,y);
-input s0,s1,a0,a1,a2,a3;
+module mul (s0,s1,a0,a1,a2,a3,y);
+input a0,a1,a2,a3,s0,s1;
 output y;
 wire a,b,c,d,s0bar,s1bar;
 not (s0bar,s0);
@@ -103,16 +103,16 @@ endmodule
 
 DEMULTIPLEXER
 
-module demul(y0,y1,y2,y3,s0,s1,i);
+module de (i,s0,s1,y0,y1,y2,y3);
 input s0,s1,i;
 output y0,y1,y2,y3;
-wire sbar,s1bar;
-nor(sbar,s0);
-nor(s1bar,s1);
-and(y0,i,sbar,s1);
-and(y1,i,sbar,s1bar);
-and(y2,i,s0,s1bar);
-and(y3,i,s0,s1);
+wire s0bar,s1bar;
+not (s0bar,s0);
+not (s1bar,s1);
+and (y3,i,s1,s0);
+and (y2,i,s1,s0bar);
+and (y1,i,s1bar,s0);
+and (y0,i,s1bar,s0bar);
 endmodule
 
 ```
